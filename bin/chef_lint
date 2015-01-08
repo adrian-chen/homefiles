@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+tailor && foodcritic . && rubocop
