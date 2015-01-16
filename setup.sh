@@ -2,11 +2,10 @@
 
 set -eu
 
-CWD=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
-
 function symlink {
   GLOB=$1
   DEST="$2"
+  CWD=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
   for f in $GLOB; do
     ln -sfv $CWD/$f "$DEST/$f"
   done
