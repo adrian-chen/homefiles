@@ -2,7 +2,6 @@
 
 set -eux
 
-git checkout master
 git pull
 rm Berksfile.lock || true
 berks install
