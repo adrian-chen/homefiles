@@ -1,0 +1,3 @@
+{
+  "extensions": ["Berksfile", "Guardfile", "Thorfile"]
+}
