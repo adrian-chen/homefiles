@@ -1,11 +1,10 @@
 {
-	"color_scheme": "Packages/User/Monokai (SL).tmTheme",
-	"ensure_newline_at_eof_on_save": true,
-	"find_selected_text": true,
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"copy_with_empty_selection": false,
 	"ignored_packages":
 	[
-		"Markdown",
-		"Vintage"
+		"Vintage",
+		"Markdown"
 	],
 	"rulers":
 	[
@@ -15,5 +14,6 @@
 	"spell_check": true,
 	"tab_size": 2,
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true
+	"trim_trailing_white_space_on_save": true,
+	"find_selected_text": true
 }
