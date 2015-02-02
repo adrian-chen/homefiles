@@ -24,6 +24,7 @@ symlink '.ssh/*' $HOME
 symlink '.gemrc' $HOME
 
 # Sublime settings
+ln -sf /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 symlink '*.sublime-settings' "$HOME/Library/Application Support/Sublime Text 3/Packages/User"
 
 # Miscellaneous scripts
