@@ -19,6 +19,9 @@ wget -nc -P "$HOME/Library/Application Support/Sublime Text 3/Installed Packages
 
 # iTerm2
 brew cask install iterm2
+for f in Solarized%20Dark.itermcolors Solarized%20Light.itermcolors; do
+  wget -nc -P $HOME/Documents https://raw.githubusercontent.com/altercation/solarized/master/iterm2-colors-solarized/$f
+done
 
 # rbenv
 brew install rbenv ruby-build
