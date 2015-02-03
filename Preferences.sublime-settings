@@ -1,6 +1,7 @@
 {
 	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
 	"copy_with_empty_selection": false,
+	"ensure_newline_at_eof_on_save": true,
 	"find_selected_text": true,
 	"ignored_packages":
 	[
