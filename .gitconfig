@@ -5,5 +5,5 @@
   ui = true
 [push]
 	default = simple
-[http]
-	proxy = http://localhost:3128
+#[http]
+#	proxy = http://localhost:3128
