@@ -19,8 +19,7 @@ if which chef > /dev/null 2>&1; then
   eval "$(chef shell-init zsh)"
 fi
 
-# Squid proxy
-#export http_proxy=http://localhost:3128
-#export https_proxy=http://localhost:3128
-
-source ~/.zprofile.d/*
+# Pull in everything else we decided not to keep in source control
+if [[ -d ~/.zprofile.d/ ]]; then
+  source ~/.zprofile.d/*
+fi
