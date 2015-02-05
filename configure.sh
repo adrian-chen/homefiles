@@ -11,7 +11,8 @@ function symlink {
   done
 }
 
-# Zsh dotfiles
+# Zsh settings
+mkdir -pv $HOME/.zprofile.d
 symlink '.z*' $HOME
 
 # Git settings
