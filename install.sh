@@ -10,7 +10,7 @@ which brew || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/i
 brew install caskroom/cask/brew-cask
 
 # Miscellaneous Utilities
-brew install wget
+brew install ag wget
 
 # Sublime Text 3
 brew tap caskroom/versions
