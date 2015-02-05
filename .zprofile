@@ -20,6 +20,6 @@ if which chef > /dev/null 2>&1; then
 fi
 
 # Pull in everything else we decided not to keep in source control
-if [[ -d ~/.zprofile.d/ ]]; then
+if [[ -d ~/.zprofile.d ]]; then
   source ~/.zprofile.d/*
 fi
