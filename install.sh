@@ -10,7 +10,7 @@ which brew || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/i
 brew install caskroom/cask/brew-cask
 
 # Miscellaneous Utilities
-brew install ag wget
+brew install ag coreutils git nmap pssh rename tcpdump watch wget
 
 # Sublime Text 3
 brew tap caskroom/versions
@@ -24,7 +24,7 @@ for f in Solarized%20Dark.itermcolors Solarized%20Light.itermcolors; do
 done
 
 # rbenv
-brew install rbenv ruby-build
+# brew install rbenv ruby-build
 
 # Chrome
 brew cask install google-chrome
