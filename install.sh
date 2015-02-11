@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-set -eu
-
 # Oh My ZSH
 curl -L http://install.ohmyz.sh | sh
 
@@ -10,7 +8,7 @@ which brew || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/i
 brew install caskroom/cask/brew-cask
 
 # Miscellaneous Utilities
-brew install ag coreutils git nmap pssh rename tcpdump watch wget
+brew install ag coreutils git nmap pssh rename watch wget
 
 # Sublime Text 3
 brew tap caskroom/versions
