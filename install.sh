@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-set -eu
-
 # Oh My ZSH
 curl -L http://install.ohmyz.sh | sh
 

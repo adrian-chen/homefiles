@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-set -eu
-
 function symlink {
   GLOB=$1
   DEST="$2"
