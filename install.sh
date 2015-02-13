@@ -10,7 +10,7 @@ which brew || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/i
 brew install caskroom/cask/brew-cask
 
 # Miscellaneous Utilities
-brew install ag coreutils git nmap pssh rename tcpdump watch wget
+brew install ag coreutils git gnu-sed nmap pssh rename tcpdump watch wget
 
 # Sublime Text 3
 brew tap caskroom/versions
