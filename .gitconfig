@@ -1,9 +1,9 @@
 [user]
-  name = Mike Conigliaro
-  email = mike@conigliaro.org
+	name = Mike Conigliaro
+	email = mike@conigliaro.org
 [color]
-  ui = true
+	ui = true
 [push]
 	default = simple
-#[http]
-#	proxy = http://localhost:3128
+[credential]
+	helper = osxkeychain
