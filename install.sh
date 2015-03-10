@@ -32,3 +32,6 @@ brew cask install google-chrome
 
 # Flux
 brew cask install flux
+
+# Amazon Web Services
+brew install awscli
