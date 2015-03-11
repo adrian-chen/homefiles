@@ -27,7 +27,8 @@ done
 brew install rbenv
 brew install ruby-build
 
-# Chrome
+# Google
+brew cask install google-drive
 brew cask install google-chrome
 
 # Flux
