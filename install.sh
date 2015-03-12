@@ -8,7 +8,7 @@ which brew || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/i
 brew install caskroom/cask/brew-cask
 
 # Miscellaneous Utilities
-for f in ag coreutils git gnu-sed nmap pssh rename tcpdump watch wget; do
+for f in ag coreutils git gnu-sed jq nmap pssh rename tcpdump watch wget; do
   brew install $f
 done
 
