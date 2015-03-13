@@ -16,6 +16,7 @@ symlink '.z*' $HOME
 symlink '.gitconfig' $HOME
 
 # SSH settings
+test -d $HOME/.ssh || ssh-keygen
 symlink '.ssh/*' $HOME
 
 # Ruby settings
