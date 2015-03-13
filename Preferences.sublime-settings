@@ -10,7 +10,8 @@
 	],
 	"rulers":
 	[
-		79
+		80,
+		120
 	],
 	"save_on_focus_lost": true,
 	"spell_check": true,
