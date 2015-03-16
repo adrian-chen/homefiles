@@ -1,5 +1,5 @@
 # Miscellaneous Utilities
-brew 'ag'
+brew 'the_silver_searcher'
 brew 'coreutils'
 brew 'git'
 brew 'gnu-sed'
