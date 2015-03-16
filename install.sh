@@ -1,38 +1,21 @@
 #!/usr/bin/env bash
 
-# Oh My ZSH
-curl -L http://install.ohmyz.sh | sh
-
 # Homebrew
 which brew || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install caskroom/cask/brew-cask
+brew tap Homebrew/brewdler
+brew brewdle
 
-# Miscellaneous Utilities
-for f in ag coreutils git gnu-sed jq nmap pssh rename tcpdump watch wget; do
-  brew install $f
-done
+# Homebrew uninstaller
+wget -nc -P /usr/local/bin https://gist.githubusercontent.com/mxcl/1173223/raw/a833ba44e7be8428d877e58640720ff43c59dbad/uninstall_homebrew.sh
+chmod +x /usr/local/bin/uninstall_homebrew.sh
 
-# Sublime Text 3
-brew tap caskroom/versions
-brew cask install sublime-text3
-wget -nc -P "$HOME/Library/Application Support/Sublime Text 3/Installed Packages" https://packagecontrol.io/Package%20Control.sublime-package
+# Oh My ZSH
+curl -Ls http://install.ohmyz.sh | sh
 
-# iTerm2
-brew cask install iterm2
+# Solarized theme
 for f in Solarized%20Dark.itermcolors Solarized%20Light.itermcolors; do
   wget -nc -P $HOME/Documents https://raw.githubusercontent.com/altercation/solarized/master/iterm2-colors-solarized/$f
 done
 
-# rbenv
-brew install rbenv
-brew install ruby-build
-
-# Google
-brew cask install google-drive
-brew cask install google-chrome
-
-# Flux
-brew cask install flux
-
-# Amazon Web Services
-brew install awscli
+# Package Control for Sublime Text 3
+wget -nc -P "$HOME/Library/Application Support/Sublime Text 3/Installed Packages" https://packagecontrol.io/Package%20Control.sublime-package
