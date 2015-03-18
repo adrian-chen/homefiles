@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -eu
+
 # Homebrew
 which brew || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew tap Homebrew/brewdler
@@ -19,3 +21,8 @@ done
 
 # Package Control for Sublime Text 3
 wget -nc -P "$HOME/Library/Application Support/Sublime Text 3/Installed Packages" https://packagecontrol.io/Package%20Control.sublime-package
+
+# rbenv/ChefDK cohabitation
+mkdir -p $RBENV_ROOT/plugins/rbenv-chefdk
+git clone https://github.com/docwhat/rbenv-chefdk.git $RBENV_ROOT/plugins/rbenv-chefdk || true
+mkdir -p $RBENV_ROOT/versions/chefdk

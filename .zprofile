@@ -8,15 +8,15 @@ if which brew > /dev/null 2>&1; then
   export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 fi
 
+# ChefDK
+if which chef > /dev/null 2>&1; then
+  eval "$(chef shell-init zsh)"
+fi
+
 # rbenv
 if which rbenv > /dev/null 2>&1; then
   export RBENV_ROOT=/usr/local/var/rbenv
   eval "$(rbenv init -)"
-fi
-
-# ChefDK
-if which chef > /dev/null 2>&1; then
-  eval "$(chef shell-init zsh)"
 fi
 
 # Pull in everything else we decided not to keep in source control
