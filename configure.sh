@@ -28,3 +28,6 @@ symlink '*.sublime-settings' "$HOME/Library/Application Support/Sublime Text 3/P
 # Miscellaneous scripts
 symlink 'bin/*' /usr/local
 hash -r
+
+# Show hidden files in Finder
+defaults write com.apple.finder AppleShowAllFiles YES
