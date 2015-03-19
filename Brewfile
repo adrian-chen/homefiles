@@ -36,3 +36,6 @@ cask 'sublime-text3'
 
 # ChefDK
 cask 'chefdk'
+
+# Cyberduck
+cask 'cyberduck'
