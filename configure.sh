@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
+set -eu
+
 function symlink {
   GLOB=$1
-  DEST="$2"
+  DEST=$2
   CWD=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
   for f in $GLOB; do
     ln -sfv "$CWD/$f" "$DEST/$f"
