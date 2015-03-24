@@ -23,6 +23,6 @@ done
 wget -nc -P "$HOME/Library/Application Support/Sublime Text 3/Installed Packages" https://packagecontrol.io/Package%20Control.sublime-package
 
 # rbenv/ChefDK cohabitation
-mkdir -p $RBENV_ROOT/plugins/rbenv-chefdk
-git clone https://github.com/docwhat/rbenv-chefdk.git $RBENV_ROOT/plugins/rbenv-chefdk || true
-mkdir -p $RBENV_ROOT/versions/chefdk
+mkdir -p $(rbenv root)/plugins
+git clone https://github.com/docwhat/rbenv-chefdk.git $(rbenv root)/plugins/rbenv-chefdk || true
+mkdir -p $(rbenv root)/versions/chefdk
