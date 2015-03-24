@@ -1,16 +1,15 @@
 # Make Sublime the default editor
-if which subl > /dev/null 2>&1; then
+if command -v subl >/dev/null 2>&1; then
   export EDITOR='subl -w'
 fi
 
 # Homebrew
-if which brew > /dev/null 2>&1; then
+if commmand -v brew > /dev/null 2>&1; then
   export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 fi
 
 # rbenv
-if which rbenv > /dev/null 2>&1; then
-  export RBENV_ROOT=/usr/local/var/rbenv
+if command -v rbenv > /dev/null 2>&1; then
   eval "$(rbenv init -)"
 fi
 
