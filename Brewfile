@@ -39,3 +39,6 @@ cask 'chefdk'
 
 # Cyberduck
 cask 'cyberduck'
+
+# VLC
+cask 'vlc'
