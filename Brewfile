@@ -7,6 +7,7 @@ brew 'jq'
 brew 'nmap'
 brew 'pssh'
 brew 'rename'
+brew 'shellcheck'
 brew 'watch'
 brew 'wget'
 

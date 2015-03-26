@@ -13,6 +13,7 @@
 		"SublimeLinter-annotations",
 		"SublimeLinter-json",
 		"SublimeLinter-rubocop",
-		"SublimeLinter-ruby"
+		"SublimeLinter-ruby",
+		"SublimeLinter-shellcheck"
 	]
 }
