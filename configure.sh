@@ -12,17 +12,17 @@ function symlink {
 }
 
 # Zsh settings
-symlink '.z*' $HOME
+symlink '.z*' "$HOME"
 
 # Git settings
-symlink '.gitconfig' $HOME
+symlink '.gitconfig' "$HOME"
 
 # SSH settings
-test -d $HOME/.ssh || ssh-keygen
-symlink '.ssh/*' $HOME
+test -d "$HOME/.ssh" || ssh-keygen
+symlink '.ssh/*' "$HOME"
 
 # Ruby settings
-symlink '.gemrc' $HOME
+symlink '.gemrc' "$HOME"
 
 # Sublime settings
 symlink '*.sublime-settings' "$HOME/Library/Application Support/Sublime Text 3/Packages/User"

@@ -16,7 +16,7 @@ curl -Ls http://install.ohmyz.sh | sh
 
 # Solarized theme
 for f in Solarized%20Dark.itermcolors Solarized%20Light.itermcolors; do
-  wget -nc -P $HOME/Documents https://raw.githubusercontent.com/altercation/solarized/master/iterm2-colors-solarized/$f
+  wget -nc -P "$HOME/Documents https://raw.githubusercontent.com/altercation/solarized/master/iterm2-colors-solarized/$f"
 done
 
 # Package Control for Sublime Text 3
@@ -26,9 +26,9 @@ wget -nc -P "$HOME/Library/Application Support/Sublime Text 3/Installed Packages
 pip3 install pyyaml
 
 # rbenv/ChefDK cohabitation
-mkdir -p $(rbenv root)/plugins
-git clone https://github.com/docwhat/rbenv-chefdk.git $(rbenv root)/plugins/rbenv-chefdk || true
-mkdir -p $(rbenv root)/versions/chefdk
+mkdir -p "$(rbenv root)/plugins"
+git clone https://github.com/docwhat/rbenv-chefdk.git "$(rbenv root)/plugins/rbenv-chefdk" || true
+mkdir -p "$(rbenv root)/versions/chefdk"
 
 # FIXME: Fix for https://github.com/SublimeLinter/SublimeLinter3/issues/227
 # Hopefully fixed in Chefdk > 0.4.0
