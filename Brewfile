@@ -15,6 +15,9 @@ brew 'wget'
 brew 'rbenv'
 brew 'ruby-build'
 
+# Python 3 (for SublimeLinter-pyyaml)
+brew 'python3'
+
 # Amazon Web Services
 brew 'awscli'
 

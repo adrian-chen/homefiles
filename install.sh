@@ -22,6 +22,9 @@ done
 # Package Control for Sublime Text 3
 wget -nc -P "$HOME/Library/Application Support/Sublime Text 3/Installed Packages" https://packagecontrol.io/Package%20Control.sublime-package
 
+# We need PyYAML for SublimeLinter-pyyaml
+pip3 install pyyaml
+
 # rbenv/ChefDK cohabitation
 mkdir -p $(rbenv root)/plugins
 git clone https://github.com/docwhat/rbenv-chefdk.git $(rbenv root)/plugins/rbenv-chefdk || true
