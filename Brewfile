@@ -12,8 +12,8 @@ brew 'watch'
 brew 'wget'
 
 # rbenv
-brew 'rbenv'
-brew 'ruby-build'
+# brew 'rbenv'
+# brew 'ruby-build'
 
 # Python 3 (for SublimeLinter-pyyaml)
 brew 'python3'

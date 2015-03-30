@@ -9,9 +9,11 @@ if command -v brew > /dev/null 2>&1; then
   export HOMEBREW_GITHUB_API_TOKEN=$(<~/.homebrew_github_api_token)
 fi
 
-# rbenv
+# rbenv/ChefDK
 if command -v rbenv > /dev/null 2>&1; then
   eval "$(rbenv init -)"
+elif command -v chef > /dev/null 2>&1; then
+  eval "$(chef shell-init zsh)"
 fi
 
 # AWS
