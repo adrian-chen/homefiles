@@ -23,6 +23,7 @@ symlink '.ssh/*' "$HOME"
 
 # Ruby settings
 symlink '.gemrc' "$HOME"
+symlink '.rubocop.yml' "$HOME"
 
 # Sublime settings
 symlink '*.sublime-settings' "$HOME/Library/Application Support/Sublime Text 3/Packages/User"
