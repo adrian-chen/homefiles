@@ -4,6 +4,7 @@ brew 'coreutils'
 brew 'git'
 brew 'gnu-sed'
 brew 'jq'
+brew 'mtr'
 brew 'nmap'
 brew 'pssh'
 brew 'rename'
@@ -46,3 +47,7 @@ cask 'cyberduck'
 
 # VLC
 cask 'vlc'
+
+# Wireshark
+cask 'xquartz'
+cask 'wireshark'
