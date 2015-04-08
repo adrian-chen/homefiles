@@ -1,3 +1,6 @@
+# Install `brew services` commands
+tap 'gapple/services'
+
 # Miscellaneous Utilities
 brew 'the_silver_searcher'
 brew 'coreutils'
