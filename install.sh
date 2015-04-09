@@ -29,7 +29,3 @@ pip3 install pyyaml
 mkdir -p "$(rbenv root)/plugins"
 git clone https://github.com/docwhat/rbenv-chefdk.git "$(rbenv root)/plugins/rbenv-chefdk" || true
 mkdir -p "$(rbenv root)/versions/chefdk"
-
-# FIXME: Fix for https://github.com/SublimeLinter/SublimeLinter3/issues/227
-# Hopefully fixed in Chefdk > 0.4.0
-sudo wget -nc -P /opt/chefdk/embedded/lib/ruby/site_ruby/2.1.0/rubygems/defaults/operating_system.rb https://raw.githubusercontent.com/chef/omnibus-chef/ba89fea5929c2a87c7619013be2716c89f897e20/files/rubygems-customization/default/operating_system.rb
