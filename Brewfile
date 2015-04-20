@@ -1,56 +1,31 @@
-# Install `brew services` commands
-tap 'gapple/services'
+tap 'gapple/services' # Installs `brew services` commands
+brew 'caskroom/cask/brew-cask' # Installs `brew cask` commands
+tap 'caskroom/versions' # Alternate versions of casks
 
-# Miscellaneous Utilities
-brew 'the_silver_searcher'
+cask 'android-file-transfer'
+brew 'awscli'
+cask 'chefdk'
 brew 'coreutils'
+cask 'cyberduck'
+cask 'flux'
 brew 'git'
 brew 'gnu-sed'
+cask 'google-drive'
+cask 'google-chrome'
+cask 'iterm2'
 brew 'jq'
 brew 'mtr'
 brew 'nmap'
 brew 'pssh'
+brew 'python3'
+#brew 'rbenv'
 brew 'rename'
+#brew 'ruby-build'
 brew 'shellcheck'
+cask 'sublime-text3'
+brew 'the_silver_searcher'
+cask 'vlc'
 brew 'watch'
 brew 'wget'
-
-# rbenv
-# brew 'rbenv'
-# brew 'ruby-build'
-
-# Python 3 (for SublimeLinter-pyyaml)
-brew 'python3'
-
-# Amazon Web Services
-brew 'awscli'
-
-# Homebrew Cask
-brew 'caskroom/cask/brew-cask'
-
-# iTerm2
-cask 'iterm2'
-
-# Google
-cask 'google-drive'
-cask 'google-chrome'
-
-# Flux
-cask 'flux'
-
-# Sublime Text
-tap 'caskroom/versions'
-cask 'sublime-text3'
-
-# ChefDK
-cask 'chefdk'
-
-# Cyberduck
-cask 'cyberduck'
-
-# VLC
-cask 'vlc'
-
-# Wireshark
-cask 'xquartz'
 cask 'wireshark'
+cask 'xquartz'
