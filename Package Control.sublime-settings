@@ -5,6 +5,7 @@
 	"installed_packages":
 	[
 		"Chef",
+		"Dockerfile Syntax Highlighting",
 		"GitGutter",
 		"MarkdownEditing",
 		"Package Control",
