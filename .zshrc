@@ -45,7 +45,7 @@ ZSH_THEME="gentoo"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aws brew gem git kitchen knife knife_ssh thor vagrant)
+plugins=(aws brew docker gem git kitchen knife knife_ssh thor vagrant)
 
 # User configuration
 
