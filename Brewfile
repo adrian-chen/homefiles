@@ -3,6 +3,7 @@ brew 'caskroom/cask/brew-cask' # Installs `brew cask` commands
 tap 'caskroom/versions' # Alternate versions of casks
 
 cask 'android-file-transfer'
+cask 'appcleaner'
 brew 'awscli'
 cask 'chefdk'
 brew 'coreutils'
@@ -14,6 +15,7 @@ cask 'google-drive'
 cask 'google-chrome'
 cask 'iterm2'
 brew 'jq'
+cask 'kitematic'
 brew 'mtr'
 brew 'nmap'
 brew 'pssh'
