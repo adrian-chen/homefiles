@@ -6,8 +6,8 @@
 	"find_selected_text": true,
 	"ignored_packages":
 	[
-		"Vintage",
-		"Markdown"
+		"Markdown",
+		"Vintage"
 	],
 	"rulers":
 	[
