@@ -23,6 +23,7 @@ if [[ -f ~/.aws/credentials ]]; then
 fi
 if [[ -f ~/.aws/config ]]; then
   export AWS_DEFAULT_REGION=$(ruby -rinifile -e "puts IniFile.load(File.join(File.expand_path('~'), '.aws', 'config'))['default']['region']")
+  export EC2_REGION=$AWS_DEFAULT_REGION
 fi
 
 # Pull in everything else we decided not to keep in source control

@@ -11,6 +11,13 @@ function symlink {
   done
 }
 
+# Show hidden files in Finder
+defaults write com.apple.finder AppleShowAllFiles YES
+
+# Create projects directory
+mkdir -p "$HOME/projects"
+symlink 'projects.sublime-project' "$HOME/projects"
+
 # Zsh settings
 symlink '.z*' "$HOME"
 
@@ -32,6 +39,3 @@ symlink '*.sublime-keymap' "$HOME/Library/Application Support/Sublime Text 3/Pac
 # Miscellaneous scripts
 symlink 'bin/*' /usr/local
 hash -r
-
-# Show hidden files in Finder
-defaults write com.apple.finder AppleShowAllFiles YES
