@@ -20,6 +20,7 @@ symlink 'projects.sublime-project' "$HOME/projects"
 
 # Zsh settings
 symlink '.z*' "$HOME"
+mkdir -p "$HOME/.zprofile.d"
 
 # Git settings
 symlink '.gitconfig' "$HOME"
