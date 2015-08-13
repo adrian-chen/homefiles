@@ -14,10 +14,6 @@ function symlink {
 # Show hidden files in Finder
 defaults write com.apple.finder AppleShowAllFiles YES
 
-# Create projects directory
-mkdir -p "$HOME/projects"
-symlink 'projects.sublime-project' "$HOME/projects"
-
 # Zsh settings
 symlink '.z*' "$HOME"
 mkdir -p "$HOME/.zprofile.d"
@@ -32,6 +28,10 @@ symlink '.ssh/*' "$HOME"
 # Ruby settings
 symlink '.gemrc' "$HOME"
 symlink '.rubocop.yml' "$HOME"
+
+# Create projects directory
+mkdir -p "$HOME/projects"
+cp -v projects.sublime-project "$HOME/projects"
 
 # Sublime settings
 symlink '*.sublime-settings' "$HOME/Library/Application Support/Sublime Text 3/Packages/User"
