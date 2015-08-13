@@ -16,7 +16,7 @@ curl -Ls http://install.ohmyz.sh | sh
 
 # Solarized theme
 for f in Solarized%20Dark.itermcolors Solarized%20Light.itermcolors; do
-  wget -nc -P "$HOME/Documents https://raw.githubusercontent.com/altercation/solarized/master/iterm2-colors-solarized/$f"
+  wget -nc -P "$HOME/Documents" "https://raw.githubusercontent.com/altercation/solarized/master/iterm2-colors-solarized/$f"
 done
 
 # Package Control for Sublime Text 3
