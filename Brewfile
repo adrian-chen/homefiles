@@ -5,6 +5,7 @@ tap 'caskroom/versions' # Alternate versions of casks
 cask 'android-file-transfer'
 cask 'appcleaner'
 brew 'awscli'
+brew 'bfg'
 cask 'chefdk'
 cask 'colloquy'
 brew 'coreutils'
