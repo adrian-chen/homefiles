@@ -27,8 +27,8 @@ elif command -v chef > /dev/null 2>&1; then
 fi
 
 # Test Kitchen
-export KITCHEN_HTTP_PROXY=http://localhost:3128
-export KITCHEN_HTTPS_PROXY=http://localhost:3128
+export KITCHEN_HTTP_PROXY=http://10.0.2.2:3128
+export KITCHEN_HTTPS_PROXY=http://10.0.2.2:3128
 
 # Pull in everything else we decided not to keep in source control
 if [ "$(ls -A ~/.zprofile.d)" ]; then
