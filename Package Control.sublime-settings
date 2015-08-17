@@ -13,6 +13,7 @@
 		"SideBarEnhancements",
 		"SublimeLinter",
 		"SublimeLinter-annotations",
+		"SublimeLinter-haml",
 		"SublimeLinter-json",
 		"SublimeLinter-pyyaml",
 		"SublimeLinter-rubocop",
