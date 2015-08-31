@@ -26,9 +26,9 @@ elif command -v chef > /dev/null 2>&1; then
   eval "$(chef shell-init zsh)"
 fi
 
-# Test Kitchen
-export KITCHEN_HTTP_PROXY=http://10.0.2.2:3128
-export KITCHEN_HTTPS_PROXY=http://10.0.2.2:3128
+# Vagrant and Test Kitchen
+export VAGRANT_HTTP_PROXY=http://10.0.2.2:3128
+export VAGRANT_HTTPS_PROXY=http://10.0.2.2:3128
 
 # Pull in everything else we decided not to keep in source control
 if [ "$(ls -A ~/.zprofile.d)" ]; then
