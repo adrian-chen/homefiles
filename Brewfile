@@ -1,6 +1,15 @@
-tap 'gapple/services' # Installs `brew services` commands
-brew 'caskroom/cask/brew-cask' # Installs `brew cask` commands
-tap 'caskroom/versions' # Alternate versions of casks
+# Installs `brew services` commands
+tap 'gapple/services'
+
+# Installs `brew cask` commands
+brew 'caskroom/cask/brew-cask'
+
+# Provides alternate versions of casks
+tap 'caskroom/versions'
+
+# Dependencies
+cask 'java'
+cask 'xquartz'
 
 cask 'android-file-transfer'
 cask 'appcleaner'
@@ -38,4 +47,3 @@ cask 'vlc'
 brew 'watch'
 brew 'wget'
 cask 'wireshark'
-cask 'xquartz'
