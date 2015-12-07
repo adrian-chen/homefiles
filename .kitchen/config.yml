@@ -1,4 +1,4 @@
 provisioner:
-  http_proxy: <%= ENV['KITCHEN_HTTP_PROXY'] %>
-  https_proxy: <%= ENV['KITCHEN_HTTPS_PROXY'] %>
+  http_proxy: <%= ENV['VAGRANT_HTTP_PROXY'] %>
+  https_proxy: <%= ENV['VAGRANT_HTTPS_PROXY'] %>
   chef_omnibus_url: http://www.chef.io/chef/install.sh
