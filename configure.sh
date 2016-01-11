@@ -14,6 +14,10 @@ function symlink {
 # Show hidden files in Finder
 defaults write com.apple.finder AppleShowAllFiles YES
 
+# Set keyboard repeat interval
+defaults write NSGlobalDomain KeyRepeat -int 2
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
+
 # Zsh settings
 symlink '.z*' "$HOME"
 mkdir -p "$HOME/.zprofile.d"
