@@ -1,9 +1,6 @@
 # Installs `brew services` commands
 tap 'gapple/services'
 
-# Installs `brew cask` commands
-brew 'caskroom/cask/brew-cask'
-
 # Provides alternate versions of casks
 tap 'caskroom/versions'
 
