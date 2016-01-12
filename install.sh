@@ -29,3 +29,5 @@ pip3 install pyyaml
 mkdir -p "$(rbenv root)/plugins"
 git clone https://github.com/docwhat/rbenv-chefdk.git "$(rbenv root)/plugins/rbenv-chefdk" || true
 mkdir -p "$(rbenv root)/versions/chefdk"
+
+printf "\nSuccess!\n"

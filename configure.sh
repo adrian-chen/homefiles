@@ -60,8 +60,10 @@ symlink '*.sublime-keymap' "$HOME/Library/Application Support/Sublime Text 3/Pac
 symlink squid.conf /usr/local/etc
 
 # Test Kitchen settings
-symlink .kitchen "$HOME"
+test -d "$HOME/.kitchen" || symlink '.kitchen' "$HOME"
 
 # Miscellaneous scripts
 symlink 'bin/*' /usr/local
 hash -r
+
+printf "\nSuccess!\n"
