@@ -11,6 +11,51 @@ function symlink {
   done
 }
 
+# Install Xcode Command Line Tools
+if [[ ! -d /Library/Developer/CommandLineTools ]]; then
+  xcode-select --install
+  printf "\nTo continue, please rerun this script after the Xcode Command Line Tools are installed.\n"
+  exit 1
+fi
+
+# Install Homebrew and bundled packages
+if ! command -v brew >/dev/null 2>&1; then
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+brew bundle
+
+# Download Homebrew uninstaller
+wget -nc -P $(brew --prefix)/bin https://gist.githubusercontent.com/mxcl/1173223/raw/a833ba44e7be8428d877e58640720ff43c59dbad/uninstall_homebrew.sh
+chmod +x $(brew --prefix)/bin/uninstall_homebrew.sh
+
+# Install zgen
+ZGEN_PATH="$HOME/.zgen"
+if [[ ! -d "$ZGEN_PATH" ]]; then
+  git clone https://github.com/tarjoilija/zgen.git "ZGEN_PATH"
+fi
+
+# Change default shell if necessary
+ZSH_PATH="$(brew --prefix)/bin/zsh"
+if [[ "$SHELL" != "$ZSH_PATH" ]]; then
+  sudo chsh -s "$ZSH_PATH" "$USER"
+fi
+
+# Download Solarized theme
+for f in Solarized%20Dark.itermcolors Solarized%20Light.itermcolors; do
+  wget -nc -P "$HOME/Documents" "https://raw.githubusercontent.com/altercation/solarized/master/iterm2-colors-solarized/$f"
+done
+
+# Install Package Control for Sublime Text 3
+wget -nc -P "$HOME/Library/Application Support/Sublime Text 3/Installed Packages" https://packagecontrol.io/Package%20Control.sublime-package
+
+# Install PyYAML for SublimeLinter-pyyaml
+pip3 install pyyaml
+
+# Set up rbenv/ChefDK cohabitation
+mkdir -p "$(rbenv root)/plugins"
+git clone https://github.com/docwhat/rbenv-chefdk.git "$(rbenv root)/plugins/rbenv-chefdk" || true
+mkdir -p "$(rbenv root)/versions/chefdk"
+
 # Show hidden files in finder
 defaults write com.apple.finder AppleShowAllFiles YES
 
