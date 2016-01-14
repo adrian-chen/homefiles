@@ -1,7 +1,4 @@
-# Make Sublime the default editor
-if command -v subl >/dev/null 2>&1; then
-  export EDITOR='subl -w'
-fi
+export EDITOR=vim
 
 # Homebrew
 if command -v brew > /dev/null 2>&1; then
