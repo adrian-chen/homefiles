@@ -31,7 +31,7 @@ chmod +x $(brew --prefix)/bin/uninstall_homebrew.sh
 # Install zgen
 ZGEN_PATH="$HOME/.zgen"
 if [[ ! -d "$ZGEN_PATH" ]]; then
-  git clone https://github.com/tarjoilija/zgen.git "ZGEN_PATH"
+  git clone https://github.com/tarjoilija/zgen.git "$ZGEN_PATH"
 fi
 
 # Change default shell if necessary
