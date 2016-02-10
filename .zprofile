@@ -11,7 +11,7 @@ if [[ -f ~/.aws/credentials ]]; then
   export AWS_ACCESS_KEY_ID=$(python -c "import ConfigParser; c = ConfigParser.ConfigParser(); c.read('.aws/credentials'); print c.get('default', 'aws_access_key_id')")
   export AWS_SECRET_ACCESS_KEY=$(python -c "import ConfigParser; c = ConfigParser.ConfigParser(); c.read('.aws/credentials'); print c.get('default', 'aws_secret_access_key')")
 fi
-if [[ -f ~/.aws/config ]]; then
+if [[ -f ~/.aws/config && "$(grep region ~/.aws/config)" ]]; then
   export AWS_DEFAULT_REGION=$(python -c "import ConfigParser; c = ConfigParser.ConfigParser(); c.read('.aws/config'); print c.get('default', 'region')")
   export EC2_REGION=$AWS_DEFAULT_REGION
 fi
