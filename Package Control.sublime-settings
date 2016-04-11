@@ -14,6 +14,7 @@
 		"SideBarEnhancements",
 		"SublimeLinter",
 		"SublimeLinter-annotations",
+		"SublimeLinter-contrib-foodcritic",
 		"SublimeLinter-haml",
 		"SublimeLinter-json",
 		"SublimeLinter-pyyaml",
