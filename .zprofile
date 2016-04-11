@@ -50,7 +50,7 @@ if ! zgen saved; then
     zgen oh-my-zsh plugins/sudo
     zgen oh-my-zsh plugins/capistrano
     zgen oh-my-zsh plugins/osx
-    zgen oh-my-zsh plugins/bundler
+    #zgen oh-my-zsh plugins/bundler
     zgen oh-my-zsh plugins/gem
     #zgen oh-my-zsh plugins/rails #currently broken
     zgen oh-my-zsh plugins/ruby
