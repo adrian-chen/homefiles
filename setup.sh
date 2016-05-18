@@ -29,7 +29,7 @@ wget -nc -P $(brew --prefix)/bin https://gist.githubusercontent.com/mxcl/1173223
 chmod +x $(brew --prefix)/bin/uninstall_homebrew.sh
 
 # Install Antigen
-git clone https://github.com/zsh-users/antigen.git "$HOME/.antigen"
+git clone https://github.com/zsh-users/antigen.git "$HOME/.antigen" || true
 
 # Change default shell if necessary
 ZSH_PATH="$(brew --prefix)/bin/zsh"
