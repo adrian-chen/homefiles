@@ -4,4 +4,4 @@ provisioner:
   chef_omnibus_url: http://www.chef.io/chef/install.sh
 driver:
   synced_folders:
-    - ['.', '/mnt/host', 'create: true']
+    - ['.', '/host', 'create: true']
