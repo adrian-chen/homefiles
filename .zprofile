@@ -8,6 +8,11 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search
 antigen apply
 
+# iTerm2 Shell Integration
+if [ -e "$HOME/.iterm2_shell_integration.zsh" ]; then
+  source "$HOME/.iterm2_shell_integration.zsh"
+fi
+
 # Homebrew
 if command -v brew > /dev/null 2>&1; then
   export PATH=/usr/local/bin:/usr/local/sbin:$PATH
@@ -17,8 +22,7 @@ fi
 # AWS
 export AWS_ACCESS_KEY_ID=$(aws configure get aws_access_key_id)
 export AWS_SECRET_ACCESS_KEY=$(aws configure get aws_secret_access_key)
-export AWS_DEFAULT_REGION=$(aws configure get region)
-export EC2_REGION=$AWS_DEFAULT_REGION
+export AWS_REGION=$(aws configure get region)
 
 # rbenv/ChefDK
 if command -v rbenv > /dev/null 2>&1; then
@@ -38,5 +42,5 @@ if [ "$(ls -A ~/.zprofile.d)" ]; then
   done
 fi
 
-export RUBYOPT="-W0"
+#export RUBYOPT="-W0"
 export EDITOR=vim

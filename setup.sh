@@ -79,6 +79,9 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 symlink '.z*' "$HOME"
 mkdir -p "$HOME/.zprofile.d"
 
+# iTerm2 shell integration
+symlink '.iterm2_shell_integration.zsh' "$HOME"
+
 # Git settings
 symlink '.gitconfig' "$HOME"
 
