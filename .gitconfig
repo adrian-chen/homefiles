@@ -1,8 +1,8 @@
 [user]
 	name = Mike Conigliaro
 	email = mike@conigliaro.org
-[color]
-	ui = true
+[diff]
+  compactionHeuristic = true
 [push]
 	default = simple
 [credential]
